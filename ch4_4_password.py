@@ -14,7 +14,7 @@ def valid_password_full(password: str) -> bool:
     has_digit = False
     has_lowercase = False
     for char in password:
-        if char >= 0 and char <= 9:
+        if char >= "0" and char <= "9":
             has_digit = True
         if char >= "a" and char <= "z":
             has_lowercase = True
@@ -36,7 +36,7 @@ def valid_password(password: str) -> bool:
     has_digit = False
     has_lowercase = False
     for char in password:
-        if char >= 0 and char <= 9:
+        if char >= "0" and char <= "9":
             has_digit = True
         if char >= "a" and char <= "z":
             has_lowercase = True
